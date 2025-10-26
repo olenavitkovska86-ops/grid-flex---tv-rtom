@@ -1,0 +1,52 @@
+body{
+    color: white;
+    background-color: #ababab;
+}
+#page-header, #page-footer{
+    text-align: center;
+    background-color: blue;
+}
+
+#grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+.card{
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    padding: 20px;
+    
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    min-width: 300px;
+    flex: 1 1 300px;
+    box-sizing: border-box;
+}
+.card-title{
+    margin-top: 0;
+    color: blueviolet;
+}
+
+.card-content{
+    flex-grow: 1;
+}
+
+.card-button{
+    background-color: #288838;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-button:hover{
+    background-color: bisque;
+
+}
+
+
